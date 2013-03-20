@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:clickable="false">
+    <Button
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:singleLine="false" android:layout_gravity="center_vertical" android:focusable="false"
+                android:onClick="removeJenkinsUrlInput"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_weight="0.97" android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical" android:textColor="@android:color/white"
+            android:layout_marginLeft="20dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Edit"
+            android:id="@+id/editBtn" android:onClick="editJenkinsUrlClick"/>
+</LinearLayout>

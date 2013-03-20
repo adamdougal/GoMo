@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GoMo</string>
+
+    <!-- Intent Extras Keys -->
+    <string name="jenkins_url_intent_key">JenkinsUrlIntent</string>
+
+    <!-- Shared Preferences Keys -->
+    <string name="gomo_shared_preferences">GomoSharedPreferences</string>
+    <string name="monitor_refresh_rate_key">MonitorRefreshRate</string>
+    <string name="monitor_jenkins_url_key">MonitorJenkinsUrl</string>
+    <string name="monitor_show_commit_user_key">MonitorShowCommitUser</string>
+    <string name="monitor_show_commit_message_key">MonitorShowCommitMessage</string>
+    <string name="avatar_key_prefix">Avatar_</string>
+    <string name="avatar_initials_key">AvatarInitials</string>
+</resources>

@@ -1,0 +1,56 @@
+apply plugin: 'java'
+apply plugin: 'android'
+apply plugin: 'idea'
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath files('libs/gradle-android-plugin-1.2.2-SNAPSHOT.jar')
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+def jacksonVersion = '1.9.11'
+
+def androidVersion = '2.1.2'
+def robolectricVersion = '2.0-alpha-1'
+def junitVersion = '4.10'
+def mockitoVersion = '1.9.5'
+
+dependencies {
+    compile "org.codehaus.jackson:jackson-mapper-asl:$jacksonVersion"
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+    testCompile("com.google.android:android:$androidVersion") {
+        provided = true
+    }
+    testCompile "org.robolectric:robolectric:$robolectricVersion"
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+    }
+}
+
+androidEmulatorStart {
+    avdName = "Nexus"
+}

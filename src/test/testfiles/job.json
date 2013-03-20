@@ -1,0 +1,148 @@
+{"actions": [
+    {}
+], "description": "Compiles, deploys and runs unit and functional tests for the GoMo codebase.", "displayName": "gomo", "displayNameOrNull": null, "name": "gomo", "url": "http://10.65.84.78:8080/job/gomo/", "buildable": true, "builds": [
+    {
+        "number": 28,
+        "url": "http://10.65.84.78:8080/job/gomo/28/"
+    },
+    {
+        "number": 27,
+        "url": "http://10.65.84.78:8080/job/gomo/27/"
+    },
+    {
+        "number": 26,
+        "url": "http://10.65.84.78:8080/job/gomo/26/"
+    },
+    {
+        "number": 25,
+        "url": "http://10.65.84.78:8080/job/gomo/25/"
+    },
+    {
+        "number": 24,
+        "url": "http://10.65.84.78:8080/job/gomo/24/"
+    },
+    {
+        "number": 23,
+        "url": "http://10.65.84.78:8080/job/gomo/23/"
+    },
+    {
+        "number": 22,
+        "url": "http://10.65.84.78:8080/job/gomo/22/"
+    },
+    {
+        "number": 21,
+        "url": "http://10.65.84.78:8080/job/gomo/21/"
+    },
+    {
+        "number": 20,
+        "url": "http://10.65.84.78:8080/job/gomo/20/"
+    },
+    {
+        "number": 19,
+        "url": "http://10.65.84.78:8080/job/gomo/19/"
+    },
+    {
+        "number": 18,
+        "url": "http://10.65.84.78:8080/job/gomo/18/"
+    },
+    {
+        "number": 17,
+        "url": "http://10.65.84.78:8080/job/gomo/17/"
+    },
+    {
+        "number": 16,
+        "url": "http://10.65.84.78:8080/job/gomo/16/"
+    },
+    {
+        "number": 15,
+        "url": "http://10.65.84.78:8080/job/gomo/15/"
+    },
+    {
+        "number": 14,
+        "url": "http://10.65.84.78:8080/job/gomo/14/"
+    },
+    {
+        "number": 13,
+        "url": "http://10.65.84.78:8080/job/gomo/13/"
+    },
+    {
+        "number": 12,
+        "url": "http://10.65.84.78:8080/job/gomo/12/"
+    },
+    {
+        "number": 11,
+        "url": "http://10.65.84.78:8080/job/gomo/11/"
+    },
+    {
+        "number": 10,
+        "url": "http://10.65.84.78:8080/job/gomo/10/"
+    },
+    {
+        "number": 9,
+        "url": "http://10.65.84.78:8080/job/gomo/9/"
+    },
+    {
+        "number": 8,
+        "url": "http://10.65.84.78:8080/job/gomo/8/"
+    },
+    {
+        "number": 7,
+        "url": "http://10.65.84.78:8080/job/gomo/7/"
+    },
+    {
+        "number": 6,
+        "url": "http://10.65.84.78:8080/job/gomo/6/"
+    },
+    {
+        "number": 5,
+        "url": "http://10.65.84.78:8080/job/gomo/5/"
+    },
+    {
+        "number": 4,
+        "url": "http://10.65.84.78:8080/job/gomo/4/"
+    },
+    {
+        "number": 3,
+        "url": "http://10.65.84.78:8080/job/gomo/3/"
+    },
+    {
+        "number": 2,
+        "url": "http://10.65.84.78:8080/job/gomo/2/"
+    },
+    {
+        "number": 1,
+        "url": "http://10.65.84.78:8080/job/gomo/1/"
+    }
+], "color": "blue", "firstBuild": {
+    "number": 1,
+    "url": "http://10.65.84.78:8080/job/gomo/1/"
+}, "healthReport": [
+    {
+        "description": "Build stability: No recent builds failed.",
+        "iconUrl": "health-80plus.png",
+        "score": 100
+    }
+], "inQueue": false, "keepDependencies": false,
+    "lastBuild": {
+        "number": 28,
+        "url": "http://10.65.84.78:8080/job/gomo/28/"
+    }, "lastCompletedBuild": {
+    "number": 28,
+    "url": "http://10.65.84.78:8080/job/gomo/28/"
+}, "lastFailedBuild": {
+    "number": 21,
+    "url": "http://10.65.84.78:8080/job/gomo/21/"
+}, "lastStableBuild": {
+    "number": 28,
+    "url": "http://10.65.84.78:8080/job/gomo/28/"
+}, "lastSuccessfulBuild": {
+    "number": 28,
+    "url": "http://10.65.84.78:8080/job/gomo/28/"
+}, "lastUnstableBuild": null, "lastUnsuccessfulBuild": {
+    "number": 21,
+    "url": "http://10.65.84.78:8080/job/gomo/21/"
+}, "nextBuildNumber": 31, "property": [
+    {
+        "wallDisplayName": null
+    }
+], "queueItem": null, "concurrentBuild": false, "downstreamProjects": [], "scm": {}, "upstreamProjects": []}

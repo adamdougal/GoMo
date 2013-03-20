@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center"
+                  android:visibility="visible" android:focusableInTouchMode="false">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back"
+                android:layout_gravity="left|center_vertical" android:layout_weight="0.5" android:onClick="backBtnClick"
+                android:id="@+id/backBtn"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save"
+                android:layout_weight="0.5" android:layout_gravity="center"
+                android:onClick="saveAndNavigateBackToMonitor" android:id="@+id/saveBtn"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left|center_vertical">
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Show Commit User" android:layout_weight="0.5" android:id="@+id/showCommitUser"
+                  android:checked="false"/>
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Show Commit Message" android:layout_weight="0.5" android:id="@+id/showCommitMessage"/>
+    </LinearLayout>
+</LinearLayout>

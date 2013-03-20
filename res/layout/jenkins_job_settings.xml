@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollViewLayout">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:focusableInTouchMode="false"
+            android:id="@+id/jenkinsSettingsLayout">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/backBtn" android:onClick="backButtonClick"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenkins URL (http://10.65.87.33:8080/)"
+                android:layout_gravity="left|center_vertical"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jenkinsUrl" android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Fetch Jobs"
+                    android:id="@+id/fetchBtn" android:onClick="fetchClick"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/buttonLayout" android:focusableInTouchMode="false"
+                android:visibility="gone">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/saveBtn" android:onClick="saveClick"
+                    android:width="125dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select All"
+                    android:id="@+id/selectAllBtn" android:onClick="selectAllJobs"
+                    android:width="125dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deselect All"
+                    android:id="@+id/deselectAllBtn" android:layout_gravity="center_horizontal|bottom"
+                    android:onClick="deselectAllJobs" android:width="125dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/jenkinsJobList">
+        </LinearLayout>
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar" android:layout_gravity="center_horizontal" android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top"
+            android:id="@+id/topBtn" android:onClick="topClick"
+            android:width="100dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:layout_gravity="right|bottom" android:visibility="gone"/>
+</FrameLayout>

@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "causes": [
+                {
+                    "shortDescription": "Started by an SCM change"
+                }
+            ]
+        },
+        {},
+        {},
+        {}
+    ],
+    "artifacts": [],
+    "building": true,
+    "description": null,
+    "duration": 25449,
+    "estimatedDuration": 39845,
+    "executor": null,
+    "fullDisplayName": "gomo #28",
+    "id": "2013-02-01_09-02-09",
+    "keepLog": false,
+    "number": 28,
+    "result": "SUCCESS",
+    "timestamp": 1359709329607,
+    "url": "http://10.65.84.78:8080/job/gomo/28/",
+    "builtOn": "",
+    "changeSet": {
+        "items": [
+            {
+                "affectedPaths": [""],
+                "author": {
+                    "absoluteUrl": "http://10.65.84.78:8080/user/dougala",
+                    "fullName": "dougala"
+                },
+                "commitId": "112",
+                "timestamp": 1359709275276,
+                "date": "2013-02-01T09:01:15.276645Z",
+                "msg": "Added target folder to ignore file",
+                "paths": [
+                    {
+                        "editType": "edit",
+                        "file": "/gomo/trunk"
+                    }
+                ],
+                "revision": 112,
+                "user": "dougala"
+            }
+        ],
+        "kind": "svn",
+        "revisions": [
+            {
+                "module": "https://portal.api.bskyb.com/svn/skygo-umv/project/gomo/trunk",
+                "revision": 112
+            }
+        ]
+    }, "culprits": [
+    {
+        "absoluteUrl": "http://10.65.84.78:8080/user/dougala",
+        "fullName": "dougala"
+    }
+]
+}

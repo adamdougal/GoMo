@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/jenkinsMenuItem"
+          android:title="Jenkins" />
+
+    <item android:id="@+id/refreshRateMenuItem"
+          android:title="Refresh Rate" />
+
+    <item android:id="@+id/commitInfoMenuItem"
+          android:title="Commit Info" />
+
+    <item android:id="@+id/avatarMenuItem"
+          android:title="Avatars" />
+</menu>

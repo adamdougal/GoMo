@@ -11,10 +11,19 @@
 # generated files
 bin/
 gen/
+tmp/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
 
-# Eclipse project files
+# IntelliJ and Eclipse project files
 .classpath
 .project
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Mac files
+*.DS_Store

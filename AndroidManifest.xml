@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.gomo"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/gomo" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                 android:windowSoftInputMode="stateAlwaysHidden" android:hardwareAccelerated="true">
+
+        <activity android:name=".activities.MonitorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.JenkinsSettingsActivity"/>
+        <activity android:name=".activities.JenkinsJobsSettingsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activities.RefreshRateSettingsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activities.CommitInfoSettingsActivity"/>
+        <activity android:name=".activities.AvatarSettingsActivity" android:windowSoftInputMode="stateHidden"/>
+    </application>
+</manifest> 

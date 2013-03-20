@@ -1,0 +1,26 @@
+{"assignedLabels": [
+    {}
+], "mode": "NORMAL", "nodeDescription": "the master Jenkins node", "nodeName": "", "numExecutors": 2, "description": null, "jobs": [
+    {
+        "name": "gomo",
+        "url": "http://10.65.84.78:8080/job/gomo/",
+        "color": "blue"
+    },
+    {
+        "name": "umv",
+        "url": "http://10.65.84.78:8080/job/umv/",
+        "color": "blue"
+    }
+], "overallLoad": {}, "primaryView": {
+    "name": "All",
+    "url": "http://10.65.84.78:8080/"
+}, "quietingDown": false, "slaveAgentPort": 0, "unlabeledLoad": {}, "useCrumbs": false, "useSecurity": false, "views": [
+    {
+        "name": "All",
+        "url": "http://10.65.84.78:8080/"
+    },
+    {
+        "name": "Monitor",
+        "url": "http://10.65.84.78:8080/view/Monitor/"
+    }
+]}

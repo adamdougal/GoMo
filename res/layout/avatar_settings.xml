@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/settingsLinearLayout"
+            android:orientation="vertical" android:longClickable="true" android:clickable="true">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:orientation="vertical" android:longClickable="true" android:clickable="true">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:layout_gravity="left|center_vertical" android:layout_weight="0.5"
+                        android:onClick="backBtnClick" android:id="@+id/backBtn"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:layout_weight="0.5" android:layout_gravity="center"
+                        android:onClick="saveAndNavigateBackToMonitor" android:id="@+id/saveBtn"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="left|center_vertical">
+                <Button
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:text="+"
+                        android:id="@+id/addAvatarButton"
+                        android:onClick="addAvatarInputClick" android:width="50dp" android:layout_marginRight="5dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:text="Initials" android:layout_marginRight="5dp" android:width="70dp"
+                        android:singleLine="false"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gravatar Email"
+                        android:id="@+id/textView1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="left|center_vertical"
+                    android:id="@+id/listOfAvatars">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back"
+                android:layout_gravity="left|center_vertical" android:layout_weight="0.5"
+                android:onClick="backBtnClick" android:id="@+id/backBtn"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save"
+                android:layout_weight="0.5" android:layout_gravity="center"
+                android:onClick="saveAndNavigateBackToMonitor" android:id="@+id/saveBtn"/>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:text="Refresh Rate (Min 5 seconds)" android:layout_marginBottom="5dp"
+              android:textColor="@android:color/white" android:layout_gravity="left|center_vertical"/>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/refreshRate"
+              android:textSize="14dp" android:textIsSelectable="false" android:inputType="number"
+              android:layout_gravity="left|center_vertical"/>
+</LinearLayout>
