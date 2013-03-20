@@ -17,6 +17,9 @@ build/
 # Local configuration file (sdk path, etc)
 local.properties
 
+# Gradle files
+.gradle/
+
 # IntelliJ and Eclipse project files
 .classpath
 .project
