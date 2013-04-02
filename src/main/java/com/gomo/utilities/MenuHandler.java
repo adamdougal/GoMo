@@ -44,27 +44,23 @@ public class MenuHandler {
 
         Intent avatarSettingsIntent = new Intent(activity, AvatarSettingsActivity.class);
         activity.startActivity(avatarSettingsIntent);
-        activity.finish();
     }
 
     public static void navigateToJenkinsSettings(Activity activity) {
 
         Intent jenkinsSettingsIntent = new Intent(activity, JenkinsSettingsActivity.class);
         activity.startActivity(jenkinsSettingsIntent);
-        activity.finish();
     }
 
     public static void navigateToRefreshRateSettings(Activity activity) {
 
         Intent refreshRateSettingsIntent = new Intent(activity, RefreshRateSettingsActivity.class);
         activity.startActivity(refreshRateSettingsIntent);
-        activity.finish();
     }
 
     public static void navigateToCommitInfoSettings(Activity activity) {
 
         Intent commitInfoSettingsIntent = new Intent(activity, CommitInfoSettingsActivity.class);
         activity.startActivity(commitInfoSettingsIntent);
-        activity.finish();
     }
 }
