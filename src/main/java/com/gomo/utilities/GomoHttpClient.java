@@ -2,9 +2,15 @@ package com.gomo.utilities;
 
 import org.json.JSONException;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 public class GomoHttpClient {
 
@@ -14,6 +20,33 @@ public class GomoHttpClient {
     private static final String JSON_FILE_EXTENSION = ".json";
 
     public static File getFileFromUrl(String urlString) throws IOException, JSONException {
+
+        TrustManager[] trustAllCerts = new TrustManager[] {
+                new X509TrustManager() {
+                    @Override
+                    public X509Certificate[] getAcceptedIssuers() {
+                        return null;
+                    }
+
+                        @Override
+                    public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+
+                    }
+
+                    @Override
+                    public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                    }
+                }
+        };
+
+        try {
+            SSLContext sc = SSLContext.getInstance("SSL");
+            sc.init(null, trustAllCerts, new java.security.SecureRandom());
+            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
 
         URL url = new URL(urlString);
         URLConnection urlConnection = url.openConnection();
